@@ -1,0 +1,209 @@
+.Store {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+
+  background-image: url(./images/bss1.jpg);
+  background-size: 100% 80%;
+  grid-template-rows: 10% 40% 45%;
+}
+
+.framin {
+  margin-top: 5vh;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: auto;
+}
+
+.framin::-webkit-scrollbar {
+  width: 0;
+}
+
+.itim {
+  max-width: 0%;
+  max-height: 80%;
+  margin-right: 2%;
+  padding-right: 15%;
+  margin-bottom: 1%;
+
+  margin-left: 2%;
+  background-color: white;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  overflow: auto;
+  scroll-behavior: smooth;
+  -webkit-animation: scale-in-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.itim::-webkit-scrollbar {
+  width: 0;
+}
+.itim:hover {
+  -moz-box-shadow: inset 0 0 10px;
+  -webkit-box-shadow: inset 0 0 10px;
+  box-shadow: inset 0 0 10px;
+}
+
+.itimeimgetype {
+  position: absolute;
+  right: 10%;
+  bottom: 2%;
+  max-width: 15%;
+
+  height: auto;
+}
+.itimename {
+  position: absolute;
+  left: 10%;
+  top: 5%;
+  mix-blend-mode: luminosity;
+  pointer-events: none;
+}
+.itimeprice {
+  position: absolute;
+  top: 25vh;
+  left: 10%;
+  mix-blend-mode: luminosity;
+  pointer-events: none;
+}
+.itemprivet {
+  position: relative;
+  left: 100px;
+}
+.itemname {
+  position: static;
+  padding-right: 200px;
+}
+
+.objects {
+  background-color: red;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 15% 85%;
+}
+.classimage {
+  position: absolute;
+  top: 18%;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100%;
+}
+.image {
+  max-width: 15.2vw;
+  max-height: 18vh;
+  box-shadow: 0px 4px 4px rgba(23, 36, 216, 0.25);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  pointer-events: none;
+}
+.buybt {
+  position: absolute;
+  top: 25vh;
+  right: 10%;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+.contain {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(245, 245, 245, 1) 100%
+  );
+
+  top: 98vh;
+  width: 100vw;
+  height: 230vh;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: auto;
+}
+
+.itt {
+  position: relative;
+  background-color: white;
+  margin-right: 13%;
+  padding-right: 20%;
+  margin-top: 10%;
+  margin-left: 10%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+@-webkit-keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.bar {
+  top: 35vh;
+  left: 2vh;
+
+  -webkit-animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715)
+    both;
+
+  animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation-delay: 3s;
+}
+.obj {
+  margin-left: 0.4vw;
+  margin-top: 10vh;
+
+  width: 95px;
+  height: 30vh;
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+.ig {
+  position: absolute;
+  top: 8vh;
+  left: 2vh;
+}
+.vd {
+  position: absolute;
+  bottom: 2vh;
+  left: 2vh;
+}

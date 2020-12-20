@@ -1,0 +1,24 @@
+       <div className="contenant" id="contenant">
+          <div className="bar" id="bar"></div>
+          <div className="framin" id="framin" onWheel={this.onWheel}>
+            {this.state.listelement.map((value, index) => (
+              <Link className="itim" to={`/${value.ipfsh}`}>
+                {" "}
+                <div key={index} value={value.name}>
+                  <h5 className="itimename" id="itimename">
+                    {value.name}
+                  </h5>
+
+                  <h6 className="itimeprice" id="itimeprice">
+                    {value.price}{" "}
+                    <img
+                      wight="20px"
+                      height="20px"
+                      bottom="100%"
+                      src={ehter}
+                    ></img>
+                  </h6>
+                </div>
+              </Link>
+            ))}
+          </div>
